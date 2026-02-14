@@ -1,0 +1,16 @@
+package com.jocelyn.todoapp.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Builder
+public class TaskListResponse {
+    private Long id;
+    private String name;
+    private boolean systemDefined;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+}
